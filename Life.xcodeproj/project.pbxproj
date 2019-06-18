@@ -70,6 +70,9 @@
 		A5938DB822B231A500D1B61A /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = A5938D8422B231A400D1B61A /* HamburgerArrow.json */; };
 		A5938DB922B231A500D1B61A /* Switch_States.json in Resources */ = {isa = PBXBuildFile; fileRef = A5938D8522B231A500D1B61A /* Switch_States.json */; };
 		A5938DBA22B231A500D1B61A /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = A5938D8622B231A500D1B61A /* vcTransition1.json */; };
+		A5D12FC222B8B3DF00F53CC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D12FC122B8B3DF00F53CC5 /* BaseViewController.swift */; };
+		A5D12FC422B8B79900F53CC5 /* LivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D12FC322B8B79900F53CC5 /* LivingViewController.swift */; };
+		A5D12FC622B8B7B800F53CC5 /* TombViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D12FC522B8B7B800F53CC5 /* TombViewController.swift */; };
 		FC3CD50DB5B38683AB90B2A8 /* Pods_Life.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F26B9366BC240E246D5C18 /* Pods_Life.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +145,9 @@
 		A5938D8422B231A400D1B61A /* HamburgerArrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HamburgerArrow.json; sourceTree = "<group>"; };
 		A5938D8522B231A500D1B61A /* Switch_States.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch_States.json; sourceTree = "<group>"; };
 		A5938D8622B231A500D1B61A /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		A5D12FC122B8B3DF00F53CC5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5D12FC322B8B79900F53CC5 /* LivingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingViewController.swift; sourceTree = "<group>"; };
+		A5D12FC522B8B7B800F53CC5 /* TombViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TombViewController.swift; sourceTree = "<group>"; };
 		D89304B322B5B3A6FF7947E3 /* Pods-Life.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life.debug.xcconfig"; path = "Target Support Files/Pods-Life/Pods-Life.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +214,7 @@
 		A523446B22B0AD28006600ED /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A5D12FC022B8B3D300F53CC5 /* BaseViewController */,
 				A523448322B0C537006600ED /* BaseNavigationController */,
 			);
 			path = Base;
@@ -268,6 +275,9 @@
 		A523447822B0AD28006600ED /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A5D12FB622B8B2A400F53CC5 /* Living */,
+				A5D12FBB22B8B2A400F53CC5 /* Tomb */,
+				A5D12FC722B8BCA000F53CC5 /* Common */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -374,6 +384,133 @@
 				A5938D7422B231A400D1B61A /* B.json */,
 			);
 			path = TypeFace;
+			sourceTree = "<group>";
+		};
+		A5D12FB622B8B2A400F53CC5 /* Living */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FB922B8B2A400F53CC5 /* C */,
+				A5D12FB722B8B2A400F53CC5 /* VM */,
+				A5D12FB822B8B2A400F53CC5 /* M */,
+				A5D12FBA22B8B2A400F53CC5 /* V */,
+			);
+			path = Living;
+			sourceTree = "<group>";
+		};
+		A5D12FB722B8B2A400F53CC5 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		A5D12FB822B8B2A400F53CC5 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		A5D12FB922B8B2A400F53CC5 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FC322B8B79900F53CC5 /* LivingViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		A5D12FBA22B8B2A400F53CC5 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		A5D12FBB22B8B2A400F53CC5 /* Tomb */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FBE22B8B2A400F53CC5 /* C */,
+				A5D12FBD22B8B2A400F53CC5 /* M */,
+				A5D12FBF22B8B2A400F53CC5 /* V */,
+				A5D12FBC22B8B2A400F53CC5 /* VM */,
+			);
+			path = Tomb;
+			sourceTree = "<group>";
+		};
+		A5D12FBC22B8B2A400F53CC5 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		A5D12FBD22B8B2A400F53CC5 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		A5D12FBE22B8B2A400F53CC5 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FC522B8B7B800F53CC5 /* TombViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		A5D12FBF22B8B2A400F53CC5 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		A5D12FC022B8B3D300F53CC5 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FC122B8B3DF00F53CC5 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		A5D12FC722B8BCA000F53CC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5D12FC822B8BCA000F53CC5 /* VM */,
+				A5D12FC922B8BCA000F53CC5 /* M */,
+				A5D12FCA22B8BCA000F53CC5 /* C */,
+				A5D12FCB22B8BCA000F53CC5 /* V */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5D12FC822B8BCA000F53CC5 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		A5D12FC922B8BCA000F53CC5 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		A5D12FCA22B8BCA000F53CC5 /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		A5D12FCB22B8BCA000F53CC5 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,12 +681,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D12FC622B8B7B800F53CC5 /* TombViewController.swift in Sources */,
 				A5938D3622B1F89600D1B61A /* String+Extension.swift in Sources */,
 				A5938D3422B1F4CF00D1B61A /* UIColor+Extension.swift in Sources */,
 				25ACA8FE22B12A2000243AF6 /* UIView+Extension.swift in Sources */,
 				A523448222B0AD28006600ED /* ViewController.swift in Sources */,
 				A523448122B0AD28006600ED /* AppDelegate.swift in Sources */,
+				A5D12FC222B8B3DF00F53CC5 /* BaseViewController.swift in Sources */,
 				25ACA8FC22B11C0A00243AF6 /* Toast.swift in Sources */,
+				A5D12FC422B8B79900F53CC5 /* LivingViewController.swift in Sources */,
 				A52344B522B0DC81006600ED /* UtilsMacros.swift in Sources */,
 				A52344B322B0DBC2006600ED /* BaseNavigationController.swift in Sources */,
 			);

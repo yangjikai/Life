@@ -10,6 +10,8 @@ pod 'Kingfisher'
 pod 'SnapKit'
 pod 'IQKeyboardManagerSwift'
 pod 'YYCategories'
+pod 'SwiftDate'
+pod 'PGDatePicker'
 #pod 'EachNavigationBar'
 pod 'lottie-ios'
 end
